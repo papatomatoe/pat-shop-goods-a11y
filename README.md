@@ -1,1 +1,1 @@
-# pat-shop-goods-a11y
+# pat shop goods a11y
