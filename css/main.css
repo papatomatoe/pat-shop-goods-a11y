@@ -780,7 +780,7 @@ body {
 [role="alertdialog"],
 [role="dialog"] {
 	box-sizing: border-box;
-	padding: 74px 92px;
+	padding: 10px 15px;
 	background-color: var(--color--white);
 	border-radius: 4px;
 	min-height: 100vh;
@@ -790,6 +790,7 @@ body {
 	[role="alertdialog"],
 	[role="dialog"] {
 		position: absolute;
+    padding: 74px 92px;
 		top: 195px;
 		left: 50vw;
 		transform: translateX(-50%);
