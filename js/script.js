@@ -1142,4 +1142,12 @@ window.addEventListener("load", function () {
 	for (var i = 0; i < tablists.length; i++) {
 		new TabsManual(tablists[i]);
 	}
+
+  const subscribeForm = document.querySelector('.subscribe__form');
+  const subscribeBtn = subscribeForm.querySelector('.js-subscribe-btn');
+
+  subscribeForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    openDialog('dialog3', subscribeBtn)
+  })
 });
