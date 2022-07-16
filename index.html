@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
+  <title>Товары для котов</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <a class="button skip-link" href="#content">К основному контенту</a>
+  <header class="page-header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="/">Товары для котов</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Товары для собак</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Товары для лошадей</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Товары для черепах</a></li>
+          <li class="nav__item"><a class="nav__link" href="/">Товары для рыб</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="container page-content">
+    <h1 class="section-title page-content__title">Товары для котов</h1>
+    <section class="goods">
+      <h2 class="visually-hidden">Каталог товаров</h2>
+
+      <div class="sorting">
+        <label id="combo1-label" class="combo-label">
+          Сортировать по:
+        </label>
+        <div class="combo js-select">
+          <div aria-controls="listbox1" aria-expanded="false" aria-haspopup="listbox" aria-labelledby="combo1-label"
+            id="combo1" class="combo-input" role="combobox" tabindex="0">
+          </div>
+          <div class="combo-menu" role="listbox" id="listbox1" aria-labelledby="combo1-label" tabindex="-1">
+          </div>
+        </div>
+      </div>
+
+
+      <ul class="goods__list">
+        <li class="goods__item">
+          <img class="goods__img" src="images/cat.jpg" alt="" width="376" height="236">
+          <div class="goods__wrapper">
+            <h3 class="goods__title">Коврик для кота</h3>
+            <div class="goods__price">
+              <p class="goods__current">
+                <span class="visually-hidden">текущая цена</span>
+                <span class="goods__current js-price">100$</span>
+              </p>
+              <p>
+                <span class="visually-hidden">старая цена: </span>
+                <span class="goods__previous js-price">200$</span>
+              </p>
+            </div>
+            <button class="button button--black" type="button" aria-label="Купить коврик для кота"
+              onclick="openDialog('dialog1', this)">Купить</button>
+          </div>
+        </li>
+        <li class="goods__item">
+          <img class="goods__img" src="images/cat.jpg" alt="" width="376" height="236">
+          <div class="goods__wrapper">
+            <h3 class="goods__title">Коврик для кота</h3>
+            <div class="goods__price">
+              <p class="goods__current">
+                <span class="visually-hidden">текущая цена</span>
+                <span class="goods__current js-price">150$</span>
+              </p>
+              <p>
+                <span class="visually-hidden">старая цена: </span>
+                <span class="goods__previous">300$</span>
+              </p>
+            </div>
+            <button class="button button--black" type="button" aria-label="Купить коврик для кота"
+              onclick="openDialog('dialog1', this)">Купить</button>
+          </div>
+        </li>
+        <li class="goods__item">
+          <img class="goods__img" src="images/cat.jpg" alt="" width="376" height="236">
+          <div class="goods__wrapper">
+            <h3 class="goods__title">Коврик для кота</h3>
+            <p class="goods__price">
+              <span class="visually-hidden">цена</span>
+              <span class="js-price">50$</span>
+            </p>
+            <button class="button button--black" type="button" aria-label="Купить коврик для кота"
+              onclick="openDialog('dialog1', this)">Купить</button>
+          </div>
+        </li>
+        <li class="goods__item">
+          <img class="goods__img" src="images/cat.jpg" alt="" width="376" height="236">
+          <div class="goods__wrapper">
+            <h3 class="goods__title">Коврик для кота</h3>
+            <p class="goods__price">
+              <span class="visually-hidden">цена</span>
+              <span class="js-price">500$</span>
+            </p>
+            <button class="button button--black" type="button" aria-label="Купить коврик для кота"
+              onclick="openDialog('dialog1', this)">Купить</button>
+          </div>
+        </li>
+        <li class="goods__item">
+          <img class="goods__img" src="images/cat.jpg" alt="" width="376" height="236">
+          <div class="goods__wrapper">
+            <h3 class="goods__title">Коврик для кота</h3>
+            <p class="goods__price">
+              <span class="visually-hidden">цена</span>
+              <span class="js-price">20$</span>
+            </p>
+            <button class="button button--black" type="button" aria-label="Купить коврик для кота"
+              onclick="openDialog('dialog1', this)">Купить</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="videos">
+      <h2 class="section-title videos__title">Видео о товарах для котов</h2>
+      <div class="videos__wrapper">
+        <iframe class="videos__iframe" width="560" height="315" src="https://www.youtube.com/embed/c6x-jIuEX6k"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="info">
+      <h2 class="section-title info__title" id="tablist-1">Подробнее о товарах для котов</h2>
+      <div class="tabs">
+        <div role="tablist" aria-labelledby="tablist-1" class="manual">
+          <button id="tab-1" class="button button--black" type="button" role="tab" aria-selected="true"
+            aria-controls="tabpanel-1">
+            О котах
+          </button>
+          <button id="tab-2" class="button button--black" type="button" role="tab" aria-selected="false"
+            aria-controls="tabpanel-2" tabindex="-1">
+            О товарах
+          </button>
+        </div>
+
+        <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
+          <p>Внезапно, ключевые особенности структуры проекта, превозмогая сложившуюся непростую экономическую ситуацию,
+            описаны максимально подробно. В рамках спецификации современных стандартов, стремящиеся вытеснить
+            традиционное производство, нанотехнологии обнародованы! И нет сомнений, что элементы политического процесса
+            представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть объявлены
+            нарушающими общечеловеческие нормы этики и морали.</p>
+
+          <p>Однозначно, многие известные личности указаны как претенденты на роль ключевых факторов. Безусловно,
+            сложившаяся структура организации предоставляет широкие возможности для глубокомысленных рассуждений. С
+            учётом сложившейся международной обстановки, высокотехнологичная концепция общественного уклада выявляет
+            срочную потребность благоприятных перспектив. Каждый из нас понимает очевидную вещь: сложившаяся структура
+            организации играет определяющее значение для кластеризации усилий. Таким образом, постоянный количественный
+            рост и сфера нашей активности прекрасно подходит для реализации соответствующих условий активизации!</p>
+
+          <p>Как уже неоднократно упомянуто, диаграммы связей набирают популярность среди определенных слоев населения,
+            а значит, должны быть объявлены нарушающими общечеловеческие нормы этики и морали. Современные технологии
+            достигли такого уровня, что начало повседневной работы по формированию позиции однозначно определяет каждого
+            участника как способного принимать собственные решения касаемо поэтапного и последовательного развития
+            общества.</p>
+        </div>
+        <div id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
+          <p>Кстати, диаграммы связей призывают нас к новым свершениям, которые, в свою очередь, должны быть превращены
+            в посмешище, хотя само их существование приносит несомненную пользу обществу. Картельные сговоры не
+            допускают ситуации, при которой действия представителей оппозиции будут объективно рассмотрены
+            соответствующими инстанциями.</p>
+
+          <p>Идейные соображения высшего порядка, а также выбранный нами инновационный путь создаёт предпосылки для
+            глубокомысленных рассуждений. Учитывая ключевые сценарии поведения, экономическая повестка сегодняшнего дня
+            предоставляет широкие возможности для прогресса профессионального сообщества. Приятно, граждане, наблюдать,
+            как некоторые особенности внутренней политики, которые представляют собой яркий пример
+            континентально-европейского типа политической культуры, будут функционально разнесены на независимые
+            элементы.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container page-footer">
+    <section class="page-footer__section social">
+      <h2 class="page-footer__title social__title">Соц. сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="milto:net@net.net" target="_blank" rel="noopener noreferrer"
+            aria-label="Отправить нами E-mail">
+            <span class="visually-hidden">Откроется в новом окне</span>
+            <img src="images/email.svg" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="/" target="_blank" rel="noopener noreferrer"
+            aria-label="Написать нам в Telegram">
+            <span class="visually-hidden">Откроется в новом окне</span>
+            <img src="images/telegram.svg" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="/" target="_blank" rel="noopener noreferrer"
+            aria-label="Открыть страницу в Facebook">
+            <span class="visually-hidden">Откроется в новом окне</span>
+            <img src="images/facebook.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="page-footer__section subscribe">
+      <h2 class="page-footer__title subscribe__title">Подписка на новости</h2>
+      <form class="subscribe__form">
+        <div class="subscribe__wrapper subscribe__wrapper--email">
+          <label class="subscribe__label subscribe__label--email" for="emailField">Email:</label>
+          <input name="email" class="subscribe__input" type="email" id="emailField" required aria-required="true"
+            placeholder="gmail@gmail.com" />
+        </div>
+        <div class="subscribe__wrapper subscribe__wrapper--agreement">
+          <input class="subscribe__agreement" type="checkbox" id="agreement" name="agreement" />
+          <label class="subscribe__label subscribe__label--agreement" for="agreement">Согласен на обработку персональх
+            данных</label>
+        </div>
+        <button class="button button--black" type="submit">Подписаться</button>
+      </form>
+    </section>
+  </footer>
+
+  <div id="dialog_layer" class="dialogs">
+    <div role="dialog" id="dialog1" aria-labelledby="dialog1_label" aria-modal="true" class="dialog hidden">
+      <p class="dialog__item">Коврик для кота</p>
+      <h2 id="dialog1_label" class="dialog__title">Оформление заказа</h2>
+      <form class="dialog__form">
+        <label class="dialog__field field">
+          <span class="field__text">Имя и фамилия</span>
+          <input type="text" class="field__input" placeholder="Введите имя и фамилию" required>
+        </label>
+        <label class="dialog__field field">
+          <span class="field__text">E-mail</span>
+          <input type="email" class="field__input" placeholder="gmail@gmail.com" required>
+        </label>
+        <label class="dialog__field field">
+          <span class="field__text">Адрес доставки</span>
+          <textarea class="field__input field__input--textarea" placeholder="Введите полный почтовый адрес с индексом"
+            required></textarea>
+        </label>
+
+        <div class="radio" role="radiogroup" aria-labelledby="group_label_1" id="rg1">
+          <h3 class="radio__title" id="group_label_1">
+            Способ оплаты
+          </h3>
+          <div id="radio_1" role="radio" aria-checked="true" tabindex="0" aria-labelledby="group_label_1 radio_1">
+            Картой
+          </div>
+          <div id="radio_2" role="radio" aria-checked="false" tabindex="-1" aria-labelledby="group_label_1 radio_2">
+            Наличными
+          </div>
+        </div>
+
+        <div class="dialog__actions">
+          <button class="button button--black" type="submit">Отправить</button>
+          <button class="button" type="button" onclick="closeDialog(this)"
+            aria-label="Отменить и закрыть окно">Отменить</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="dialog2" role="dialog" aria-labelledby="dialog2_label" aria-describedby="dialog2_desc" aria-modal="true"
+      class="dialog hidden">
+      <h2 id="dialog2_label" class="dialog__item">Ваш заказ успешно создан!</h2>
+      <p id="dialog2_desc" class="dialog__desc">
+        В течении 30 минут с Вами свяжется наш менеджер для уточнения деталей заказа.
+      </p>
+      <div class="dialog__actions">
+        <button class="button button--black" type="button" id="dialog2_close_btn"
+          onclick="closeDialog(this)">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
